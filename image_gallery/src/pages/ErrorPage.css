@@ -1,0 +1,22 @@
+.error {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorimg {
+    background-image: url("../assets/Error.png");
+    background-size: cover;
+    height: 60vh;
+    width: 60vh;
+}
+
+.errortext {
+    font-size: var(--subheading);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color1);
+}

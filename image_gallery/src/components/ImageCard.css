@@ -1,0 +1,49 @@
+.imagecard {
+    width: 315px;
+    height: 315px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 6px 6px var(--color4);
+}
+
+.imagecard,
+.image, 
+.details {
+    border-radius: 25px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--color1-translucent);
+    opacity: 0;
+}
+
+.details:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity ease-in 200ms;
+}
+
+.details > * {
+    color: var(--color2);
+    background-color: transparent;
+}
+
+.title {
+    font-size: var(--subheading);
+    font-weight: 700;
+    color: var(--color3);
+}
